@@ -1,0 +1,42 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "debug-base",
+            "hidden": true,
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "debug-gcc",
+            "displayName": "Debug build with GCC 16.1.0",
+            "inherits": "debug-base",
+            "binaryDir": "${sourceDir}/build/gcc/debug",
+            "cacheVariables": {
+                "CMAKE_CXX_COMPILER": "g++"
+            }
+        },
+        {
+            "name": "debug-clang",
+            "displayName": "Debug build with Clang 22.1.4",
+            "inherits": "debug-base",
+            "binaryDir": "${sourceDir}/build/clang/debug",
+            "cacheVariables": {
+                "CMAKE_CXX_COMPILER": "clang++"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug-gcc",
+            "configurePreset": "debug-gcc"
+        },
+        {
+            "name": "debug-clang",
+            "configurePreset": "debug-clang"
+        }
+    ]
+}
