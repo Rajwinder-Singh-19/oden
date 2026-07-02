@@ -1,1 +1,3 @@
 # oden: Modern C++ Template Library For N-Dimensional ODE Systems
+This repository is currently in development. There is a full-fledged working explicit Euler solver implementaton available in the [oden.h](include/oden.h) header file, with optional adaptive step size.
+Just download the header file and copy into your project include folder if you wish to use the implementation. Thanks...
