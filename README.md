@@ -4,6 +4,6 @@ Just download the header file and copy into your project include folder if you w
 
 # What can oden do right now
 It might surprise you, but even with an euler solver, you can simulate very interesting phenomena. Take for example, contact mechanics, which has many applications in robotics.
-oden can easily model mass-damper style contact systems. Below is an example of a mass damper system - An elastic object falling from some height on to ground, under the influence of gravity.
+oden can easily model mass-damper style contact systems. Below is an example of a mass damper system - An elastic object falling from some height on to ground, under the influence of gravity (see [mass_damper_contact.cpp](/src/mass_damper_contact.cpp)).
 
 <img width="1920" height="959" alt="Oden Simulation" src="https://github.com/user-attachments/assets/3e521540-a63d-495b-9c67-32898243fc5b" />
