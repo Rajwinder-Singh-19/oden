@@ -1,6 +1,6 @@
 # oden: Modern C++ Template Library For N-Dimensional ODE Systems
 This repository is currently in development. There is a full-fledged working explicit Euler solver implementaton available in the [oden.h](/include/oden.h) header file.
-Just download the header file and copy into your project include folder if you wish to use the implementation. The user API is quite easy to use, just go through [main.cpp](/src/main.cpp), which models a simple harmonic oscillator ODE using oden. For a more advanced example, go through [](/src/mass_damper_contact.cpp), which models the contact mechanics of elastic objects. Make sure you have the latest GCC compiler installed on your system to build with oden. Building with Clang is currently untested. Thanks...
+Just download the header file and copy into your project include folder if you wish to use the implementation. The user API is quite easy to use, just go through [main.cpp](/src/main.cpp), which models a simple harmonic oscillator ODE using oden. For a more advanced example, go through [mass_damper_contact.cpp](/src/mass_damper_contact.cpp), which models the contact mechanics of elastic objects. Make sure you have the latest GCC compiler installed on your system to build with oden. Building with Clang is currently untested. Thanks...
 
 # What can oden do right now
 It might surprise you, but even with an euler solver, you can simulate very interesting phenomena. Take for example, contact mechanics, which has many applications in robotics.
